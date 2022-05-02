@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+div {
+  margin: auto auto;
+  width: 400px;
+  height: 130px;
+  outline: dashed 1px black;
+  text-align: center;
+  background-color: rgb(92, 5, 192);
+}
+input {
+  margin: 20px;
+  border-radius: 5px;
+}
+label {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: rgb(238, 238, 238);
+  margin-right: 10px;
+}
+p {
+  font-size: 18px;
+  color: black;
+  border: 0.4px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100px;
+  margin-left: 20px;
+}
+p:hover {
+  color: white;
+  border: 1px solid white;
+}
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 120px;
+  height: 30px;
+  margin: auto 380px;
+  color: black;
+  font-size: 17px;
+  border: none;
+}
+button:hover {
+  color: green;
+  border: 0.1px solid grey;
+  cursor: pointer;
+}
+select {
+  width: 80px;
+}

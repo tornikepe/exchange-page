@@ -1,0 +1,22 @@
+<div [formGroup]="currencyForm">
+
+  <div *ngFor="let input of formArr().controls; index as i">
+
+    <div formArrayName="inputs">
+      <label>Currency {{i+1}}</label>
+
+      <select #rate (change)="onChanges(i, rate.value)">
+        <option hidden>Currency</option>
+        <option *ngFor="let currency of currencyOptions" [value]="currency">{{ currency }}</option>
+      </select>
+
+      <input type="number" (keyup)="valueChanges(i)" [formControlName]="i">
+
+      <p *ngIf="i && formArr().controls.length > 2" (click)="Delete(i)">Close</p>
+    </div>
+
+  </div>
+
+</div>
+
+<button (click)="addCurrency()">Add Currency</button>
